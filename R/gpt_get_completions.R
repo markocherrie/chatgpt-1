@@ -33,7 +33,7 @@ gpt_get_completions <- function(prompt, openai_api_key = Sys.getenv("OPENAI_API_
       list(
         role = "system",
         content = paste(
-          "You are a helpful assistant with extensive knowledge of R programming.",
+          "",
           return_language
         )
       ),
