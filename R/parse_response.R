@@ -10,5 +10,5 @@ parse_response <- function(raw_responses) {
   # Parse the message content of the list of raw_responses. Trim those message, and paste them.
   paste(trimws(sapply(raw_responses, function(response) {
     sapply(response$choices, function(x) x$message$content)
-  })))
+  })), collapse = "")
 }
